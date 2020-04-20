@@ -14,7 +14,9 @@ function displayAnswers() {
     button.onclick = () => {
         div.innerHTML = "";
         document.querySelector("canvas").remove();
-        document.querySelector(".chart-container").appendChild(document.createElement("canvas"));
+        let chartContainer = document.querySelector(".chart-container");
+        chartContainer.appendChild(document.createElement("canvas"));
+        chartContainer.className = "col-12 chart-container d-none"
         initialize();
     };
     drawGraph(fracLA, fracLR);

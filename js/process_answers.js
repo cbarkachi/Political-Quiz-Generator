@@ -25,8 +25,8 @@ function processAnswers() {
 
         console.assert(thisAnswer !== -1);
 
-        let deltaMax = 2 * Math.max(item.weightAff, Math.max(item.weightNeut, item.weightNeg));
-        let delta = score(thisAnswer, item);
+        let deltaMax = 2 * Math.max(items[i].weightAff, Math.max(items[i].weightNeut, items[i].weightNeg));
+        let delta = score(thisAnswer, items[i]);
         let deltaLA = delta, deltaLR = delta;
         if (!items[i].reverseLA) {
             deltaLA *= -1;

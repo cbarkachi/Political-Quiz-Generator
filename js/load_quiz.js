@@ -4,10 +4,9 @@ let answers = ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly ag
 
 function initialize() {
     for (i = 0; i < items.length; i++) {
-        item = items[i];
         let p = document.createElement("p");
         p.for = i;
-        p.innerHTML = i + 1 + ". " + item.question;
+        p.innerHTML = i + 1 + ". " + items[i].question;
         p.style.fontWeight = "700";
         div.appendChild(p);
 
@@ -36,14 +35,6 @@ function initialize() {
     submit.innerHTML = "Submit answers";
     submit.onclick = processAnswers;
     div.appendChild(submit);
-}
-function score(answer, item) {
-    if (answer > 2)
-        return (answer - 2) * item.weightAff;
-    else if (answer == 2)
-        return (answer - 2) * item.weightNeut;
-    else
-        return (answer - 2) * item.weightNeg;
 }
 
 initialize();

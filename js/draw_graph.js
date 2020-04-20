@@ -1,5 +1,5 @@
 function drawGraph(fracLA, fracLR) {
-    document.querySelector("#chart-container-div").className = "row d-block";
+    document.querySelector(".chart-container").className = "col-12 chart-container d-block";
     new Chart(document.querySelector("canvas"), {
         type: 'bubble',
         data: {
