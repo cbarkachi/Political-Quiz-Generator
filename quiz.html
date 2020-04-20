@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Political Quiz</title>
+    <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .chart-container {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body class="vsc-initialized">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="mt-4"><a href="#">Home</a></p>
+                <h2 class="mb-4">quiz</h2>
+                <div class="col-12" id="pol-quiz"></div>
+            </div>
+        </div>
+        <div class="row d-none" id="chart-container-div">
+            <div class="col-8">
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/draw_graph.js"></script>
+    <script src="js/process_answers.js"></script>
+    <script src="js/display_answers.js"></script>
+    <script src="js/load_quiz.js"></script>
+</body>
+
+</html>
