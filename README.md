@@ -1,6 +1,6 @@
 # Political-Quiz-Generator
 #### Allows user to add questions and fine-tune weightings of questions, which can be adapted to any four-quadrant alignment question-set. Made this for a friend's website.
-#### My first stab at JS!
+#### My second stab at JS! jQuery probably would've made this a lot easier :)
 
 # How to use
 Modify/add questions to the questions.js file. Instructions for fine-tuning answer weightings are provided in the comments.
