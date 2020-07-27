@@ -8,3 +8,5 @@ Modify/add questions to the questions.js file. Instructions for fine-tuning answ
 To run, add questions and open the html file.
 
 For use with a currently existing site, add the html file to your site and if needed, modify the script sources add the bottom. The unmodified setup assumes that a js folder exists in the same directory as the html file.
+
+This version relies on a Bootstrap CDN but you can easily go without it.
